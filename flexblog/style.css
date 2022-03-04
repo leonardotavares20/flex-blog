@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+}
+body {
+    color: #222222;
+}
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+/* Super info */
+
+.superinfo-bg {
+    background-color: rgb(59, 59, 173);
+    color: white;
+}
+
+.superinfo {
+    margin: 0 auto;   
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.superinfo p, .superinfo a {
+    margin: 0px 10px 10px 10px;
+}
+
+.superinfo a {
+    color: white;
+}
+
+/* Menu */
+
+.menu-bg, .menu-bg a {
+    background-color: rgb(136, 49, 218);
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.menu-nav a:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+    color: rgb(136, 49, 218);
+    border-radius: 5px;
+}
+
+/* Introdução */
+
+.introducao {
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.sobre {
+    border-top: 2px solid blueviolet;
+    border-bottom: 2px solid blueviolet;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0px 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: rgb(136, 135, 135);
+}
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0px 10px;
+}
+
+/* Produtos */
+
+.produtos {
+    max-width: 960px;
+    margin: 60px auto;
+    padding: px;
+
+}
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0px 10px 60px 10px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.produtos-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+.produtos-item h2 {
+    font-size: 3em;
+    color: rgb(158, 158, 158);
+    background-color: rgb(235, 235, 235);
+    padding: 60px 20px;
+}
+
+.purple {
+    border-top: 8px solid purple;
+}
+
+.pink {
+    border-top: 8px solid rgb(172, 101, 113);
+}
+
+.blue {
+    border-top: 8px solid rgb(89, 89, 243);
+}
+
+/* Preço */
+
+.preco {
+    background-color: #F7F7F7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex: 1;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px;
+}
+
+.preco-item h2 {
+    color: #A4A4A4;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span {
+    max-width: 300px;
+    margin: 30px auto;
+    font-size: 3em;
+    display: block; /* display block pq por padrão span é um elemento de linha*/
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.preco-item sup {
+    font-size: 1.5rem; /* rem pq se não o sup ia crescer junto e conforme o 'em' so span ou ia crescer a partir */
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    
+    font-style: italic;
+}
+
+.preco-item li {
+    color: #A4A4A4;
+}
+
+.preco-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #A4A4A4;
+}
+
+.preco-item li::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #2C70FF;
+    border-radius: 50%; 
+}
+
+.preco-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #222222;
+    color: #222222;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .preco {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ouro {
+        order: 1;
+    }
+    .prata {
+        order: 2;
+    }
+    .cobre {
+        order: 3;
+    }
+}
+
+/* Qualidade */
+
+.qualidade {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+    margin: 20px 0px;
+    font-size: 2.25em;
+    color: #A4A4A4;
+}
+
+.qualidade-item h2:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #2C70FF;
+}
+
+.qualidade p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #A4A4A4;
+}
+
+.blue2 h2::before {
+    background-color: #2C70FF;
+}
+
+.red2 h2::before{
+    background-color: rgb(122, 15, 15);
+}
+
+.pink2 h2::before {
+    background-color: rgb(255, 42, 77);
+}
+
+/* Newsletter */
+
+.newsletter {
+    background: #F7F7F7;
+    padding: 60px calc((100% - 960px ) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+}
+
+.newsletter-info {
+    flex: 1 1 260px;
+    margin: 0px 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 3em;
+    color: #A4A4A4;
+}
+
+.newsletter-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color: #A4A4A4;
+    margin-bottom: 10px;
+}
+
+.newsletter-form{
+    flex: 2 1 240px;
+    margin: 0px 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 3 1 240px;
+    font-size: 1.25em;
+    color: #A4A4A4;
+    font-style: italic;
+    border: 3px solid #2C70FF;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 0px;
+    margin: 0px;
+}
+
+.newsletter-form button {
+    flex: 1 1 200px;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #2C70FF;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    padding: 10px;
+    border: 0px;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form button {
+        font-size: 1.5em;
+    }
+}
+
+/* Footer */
+
+.footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C70FF;
+}
+
+.footer p {
+    font-size: clamp(0.5em, 1em + 1vw,  2.5em);
+    color: #263e74;
+}
